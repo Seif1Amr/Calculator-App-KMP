@@ -1,16 +1,27 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# Calculator
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+A simple calculator application built using Kotlin Multiplatform and Compose Multiplatform.
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+This project demonstrates basic arithmetic operations and a user interface built with Jetpack Compose, shared across Android and potentially other platforms.
 
+## Project Structure
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+This is a Kotlin Multiplatform project targeting Android and iOS.
+
+*   `./composeApp/src` is for code that will be shared across your Compose Multiplatform applications.
+    *   `commonMain` is for code that’s common for all targets (like the calculator logic and UI in `App.kt`).
+    *   Other folders like `androidMain`, `iosMain` are for platform-specific Kotlin code.
+*   `./iosApp` would contain the iOS application entry point (if fully configured).
+
+## How to Run (Android)
+
+1.  Open the project in Android Studio.
+2.  Ensure you have an Android emulator set up or a physical device connected.
+3.  Select the `composeApp` run configuration from the dropdown menu in the toolbar.
+4.  Click the "Run" button (green play icon).
+
+## Features
+
+*   Basic arithmetic operations: Addition, Subtraction, Multiplication, Division, Percentage.
+*   Clear (C) and Delete (DEL) functionality.
+*   Responsive UI that adapts to input.
