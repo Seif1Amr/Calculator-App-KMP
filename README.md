@@ -25,3 +25,7 @@ This is a Kotlin Multiplatform project targeting Android and iOS.
 *   Basic arithmetic operations: Addition, Subtraction, Multiplication, Division, Percentage.
 *   Clear (C) and Delete (DEL) functionality.
 *   Responsive UI that adapts to input.
+
+*   Android studio view
+*   <img width="1919" height="1008" alt="Screenshot 2025-08-31 122552" src="https://github.com/user-attachments/assets/1822fdff-8d83-4588-a921-f56dc832fd49" />
+
